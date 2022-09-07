@@ -1,0 +1,56 @@
+@import "./functions";
+
+$color-primary: blue;
+$color-secondary: red;
+$color-tertiary: green;
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin borderLine($color) {
+  border: convert(1) solid $color;
+  padding: conver(10);
+}
+@mixin font($size, $color) {
+  text-align: center;
+  font-size: $size;
+  color: $color;
+}
+
+div {
+  @include flexCenter;
+  @include borderLine($color-secondary);
+  flex-direction: column;
+  h1 {
+    @include font(convert(30), $color-tertiary);
+    border-bottom: convert(1) solid $color-primary;
+  }
+  section {
+    margin: convert(10);
+    &:nth-of-type(1) {
+      @include flexCenter;
+      @include borderLine($color-tertiary);
+      padding: 0;
+      article {
+        &:nth-of-type(odd) {
+          @include font(convert(16), $color-primary);
+          @include borderLine($color-tertiary);
+        }
+        &:nth-of-type(even) {
+          @include font(convert(16), $color-secondary);
+          @include borderLine($color-tertiary);
+        }
+      }
+    }
+    &:nth-of-type(2) {
+      @include flexCenter;
+      @include borderLine($color-primary);
+      padding: convert(10);
+      article {
+        @include font(convert(24), $color-tertiary);
+      }
+    }
+  }
+}
