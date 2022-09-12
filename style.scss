@@ -1,8 +1,5 @@
 @import "./functions";
-
-$color-primary: blue;
-$color-secondary: red;
-$color-tertiary: green;
+@import "./variables";
 
 @mixin flexCenter {
   display: flex;
@@ -11,7 +8,7 @@ $color-tertiary: green;
 }
 @mixin borderLine($color) {
   border: convert(1) solid $color;
-  padding: conver(10);
+  padding: convert(10);
 }
 @mixin font($size, $color) {
   text-align: center;

@@ -3,7 +3,7 @@ div {
   align-items: center;
   justify-content: center;
   border: 0.0625rem solid red;
-  padding: conver(10);
+  padding: 0.625rem;
   flex-direction: column;
 }
 div h1 {
@@ -20,7 +20,7 @@ div section:nth-of-type(1) {
   align-items: center;
   justify-content: center;
   border: 0.0625rem solid green;
-  padding: conver(10);
+  padding: 0.625rem;
   padding: 0;
 }
 div section:nth-of-type(1) article:nth-of-type(odd) {
@@ -28,21 +28,21 @@ div section:nth-of-type(1) article:nth-of-type(odd) {
   font-size: 1rem;
   color: blue;
   border: 0.0625rem solid green;
-  padding: conver(10);
+  padding: 0.625rem;
 }
 div section:nth-of-type(1) article:nth-of-type(even) {
   text-align: center;
   font-size: 1rem;
   color: red;
   border: 0.0625rem solid green;
-  padding: conver(10);
+  padding: 0.625rem;
 }
 div section:nth-of-type(2) {
   display: flex;
   align-items: center;
   justify-content: center;
   border: 0.0625rem solid blue;
-  padding: conver(10);
+  padding: 0.625rem;
   padding: 0.625rem;
 }
 div section:nth-of-type(2) article {
